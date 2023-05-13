@@ -3,6 +3,7 @@
     public class ShoesDetails
     {
         public Guid ShoesDetailsId { get; set; }
+        public DateTime CreateDate { get; set; }
         public decimal Price { get; set; }
         public decimal ImportPrice { get; set; }
         public int AvailableQuantity { get; set; }
@@ -22,5 +23,6 @@
         public virtual Supplier Supplier { get; set; }
         public virtual List<Image> Images { get; set; }
         public virtual List<CartDetails> CartDetails { get; set; }
+        public virtual List<BillDetails> BillDetails { get; set; }
     }
 }

@@ -13,12 +13,13 @@
         public string Note { get; set; }
         public int Status { get; set; }
         public Guid CouponID { get; set; }
-        public Guid CumstomerID { get; set; }
+        public Guid CustomerID { get; set; }
         public Guid VoucherID { get; set; }
         public Guid EmployeeID { get; set; }
         public virtual Coupon Coupon { get; set; }
         public virtual Employee Employee { get; set; }
         public virtual Voucher Voucher { get; set; }
         public virtual Customer Customer { get; set; }
+        public virtual List<BillDetails> BillDetails { get; set; }
     }
 }
